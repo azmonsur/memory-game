@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Knights of Camelot (Memory Game)</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+ <!--Game general SLATE Begins here-->
+ <div class="slate"> 
+ 
+  <!--General infp Begins here-->
+  <div class="info">
+    <div class="title">
+      <span>Knights of Camelot</span>
+    </div>
+    
+    <!--Score Screen Begins here-->
+    <div id="score" class="score">
+      <div class="player player-1 one-third">
+        <span id="player-1-name" class="player-name">Player 1</span>
+        <span id="player-1-color" class="player-color"></span>
+      </div>
+      
+      <div class="count one-third">
+        <span id="player-1-score" class="player-score-number">0</span>
+        <div id="versus" class="versus player-score">_</div>
+        <span id="player-2-score" class="player-score-number">0</span>
+      </div>
+      
+      <div class="player player-2 one-third">
+        <span id="player-2-name" class="player-name">Player 2</span>
+        <div id="player-2-color" class="player-color"></div>
+      </div>
+    </div>
+    <!--Score Screen endss here-->
+  </div>
+  <!--General info ends here-->
+  
+  <!--Card Board Begins here-->
+  <div id="board" class="board">
+   <!--This space will be populated by JS, it holds the card--->
+  </div>
+  <!--Card Board ends here-->
+  
+  <!--Control Screen Begins here-->
+  <div id="start-control" class="start-control">
+    <div id="player-name" class="player-name">
+     <div id="player-name-info" class="player-name-info">
+      <div>
+        <span>Enter players name:</span><br />
+        <span id="name-error" class="error" style="font-size:1.2em">
+          (10 characters or less)
+        </span>
+      </div>
+      <input id="input-player-1" placeholder="Player 1">
+      <input id="input-player-2" placeholder="Player 2">
+     </div>
+    </div>
+    
+    <div class="retry-game">
+      <button id="btn-start" class="btn-control btn-retry">Start Game</button>
+      <button id="btn-new-game" class="btn-control btn-retry" style="display:none">
+        New Game
+      </button>
+    </div>
+  </div>
+  <!--Control Screen ends here-->
+  
+  <!--Bottom info screen Begins here-->
+  <div class="bottom-control">
+    <div class="restart-game">
+      <button id="restart-game" class="btn-control btn-restart" disaled>Restart Game</button>
+    </div>
+  </div>  
+  <!--Bottom info Screen ends here-->
+  
+ </div>
+ <!--General game SLATE ends here-->
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+</html>
+
+
